@@ -31,7 +31,7 @@ Download the extension for your browser from [releases](https://github.com/Aguta
 >[!WARNING]
 > The extension will be unloaded when you close the browser. You must follow these step each time you re-open your browser (but you only need to install the extension from releases once)
 ### Chrome:
-1. Unzip the downloaded file (the one you downloaded from releases, should be called "yawse-*-chrome.zip" or similar). Often done by clicking the downloaded file and clicking "unzip" or "extract"
+1. Unzip the downloaded file (the one you downloaded from releases, should be called "yawse-*-chrome.zip" or similar). Often done by clicking the downloaded file and clicking "unzip" or "extract" in your file manager (Finder on MacOS, File Manager on Windows, etc.)
 2. Type `chrome://extensions/` into your URL bar and press enter
 3. Toggle "Developer mode" on top right corner
 4. Click "load unpacked"
