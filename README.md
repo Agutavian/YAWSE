@@ -24,7 +24,7 @@ Another  browser extension that scrapes stuff from your current active tab
 Download the extension for your browser from [releases](https://github.com/Agutavian/YAWSE/releases)
 
 ### Firefox:
-1. Go to: [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox) on your browser
+1. Type `about:debugging#/runtime/this-firefox` into your URL bar and press enter
 2. Click "Load temporary add-ons"
 3. Select the downloaded zip file that you selected (should be called "yawse-*-firefox.zip" or similar)
 4. Done!
@@ -32,7 +32,7 @@ Download the extension for your browser from [releases](https://github.com/Aguta
 > The extension will be unloaded when you close the browser. You must follow these step each time you re-open your browser (but you only need to install the extension from releases once)
 ### Chrome:
 1. Unzip the downloaded file (the one you downloaded from releases, should be called "yawse-*-chrome.zip" or similar). Often done by clicking the downloaded file and clicking "unzip" or "extract"
-2. Go to: [chrome://extensions/](chrome://extensions/) on your browser
+2. Type `chrome://extensions/` into your URL bar and press enter
 3. Toggle "Developer mode" on top right corner
 4. Click "load unpacked"
 5. Done!
