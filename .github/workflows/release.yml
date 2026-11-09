@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install --frozen-lockfile
+
+      - name: Zip extensions
+        run: |
+          bun run zip
+          bun run zip:firefox
+
+      - name: Attach zips to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: .output/*.zip
