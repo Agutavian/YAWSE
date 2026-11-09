@@ -23,6 +23,24 @@ Another  browser extension that scrapes stuff from your current active tab
 
 Download the extension for your browser from ![releases](test.com)
 
+
+### Manual
+From the root of the extracted source code:
+
+    bun install --frozen-lockfile
+    bun run zip:firefox
+
+`bun install` also runs `wxt prepare` automatically, which generates the
+`.wxt/` directory with TypeScript types.
+
+`bun run zip:firefox` is defined in `package.json` as `wxt zip -b firefox`.
+It builds the Firefox (Manifest V3) extension with WXT/Vite and packages it.
+#### Output
+
+- `.output/firefox-mv3/` contains the unpacked built extension.
+- `.output/<name>-<version>-firefox.zip` is the extension package that
+  was submitted. The build should produce a package identical to it.
+
 ### Firefox:
 ### Chrome:
 ### Other:
