@@ -49,16 +49,21 @@
 
 <!--{current_page}-->
 <!--{$currentTab?.url}-->
-{#if current_page === PAGES.TWITTER}
+<!--{#if current_page === PAGES.TWITTER}-->
 <!--  twitter-->
+THESE WILL ONLY WORK ON THE POSTS OF THE RESPECTIVE WEBSITES: JUST TEST RN
+IF ON TWITTER:
   <TwitterComponent sendResult={(result) => downloadCSV(result)} />
-  {:else if current_page === PAGES.INSTAGRAM}
+  <!--{:else if current_page === PAGES.INSTAGRAM}-->
 <!--  instagram-->
+
+IF ON INSTAGRAM:
     <InstagramComponent sendResult={(result) => downloadCSV(result)} />
-  {:else if current_page === PAGES.YOUTUBE}
+  <!--{:else if current_page === PAGES.YOUTUBE}-->
 <!--  youutube-->
+IF ON YOUTUBE:
     <YouTubeComponent sendResult={(result) => downloadCSV(result)} />
-  {:else}
+  <!--{:else}-->
 <!--  none-->
-    <NoneComponent />
-{/if}
+<!--    <NoneComponent />-->
+<!--{/if}-->
